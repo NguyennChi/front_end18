@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Happy Monkey', cursive;
+    text-align: center;
+    color:white;
+    background-image: linear-gradient(to top, #EFB0C9, #a2d2ff);
+}
+.wedding-title{
+    padding: 20px 0px ;
+
+}
+.wedding-avatar{
+    width: 150px;
+    height: 150px;
+    border: 5px solid palevioletred;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+.wedding-name{
+ /* display: inline-block; */
+ padding-bottom: 10px;
+}
+.wedding-date{
+   display: inline-block;
+   background-color: palevioletred;
+   padding: 5px 10px;
+   border-radius: 5px;
+
+}
+.section-gift{
+    margin-top: 30px;
+
+}
+    .section-gift .title{
+
+    }
+    .section-gift .hint{
+        
+    }
+    .section-gift .img{
+        margin-top: 15px;
+        width: 400px;
+        height: 400px;
+        border: 5px solid white;
+        border-radius: 10px;
+    }
+    .section-gift .img:hover{
+        content: url('./img/cake.jpg');
+    }
