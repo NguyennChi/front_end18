@@ -20,7 +20,10 @@ body{
     border: 5px solid palevioletred;
     border-radius: 50%;
     margin-bottom: 15px;
+    overflow: hidden;
+    object-fit: cover;
 }
+
 .wedding-name{
     margin: auto;
     background-color:palevioletred ;

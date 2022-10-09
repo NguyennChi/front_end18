@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Inter+Tight:ital,wght@1,200&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Inter Tight', sans-serif;
+    scroll-behavior: smooth;
+}
+header{
+    text-align: center;
+    background-image: url(./images/bg-hero.jpg);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; 
+    background-color: #cccccc; /* Used if the image is unavailable */
+    color: white;
+
+}
+    header .title{
+        margin: 100px 10px 0px 5px;
+        border: 1px solid #17335a;
+        background-color: #17335a;
+        display: inline-block;
+        padding: 5px 10px;
+        border-radius: 15px;
+        text-shadow: 1px 1px #ff0000;
+        box-shadow:  inset -5px -5px 10px #17335a;
+
+    }
+    header p.content{
+        margin: 5px 10px 100px 10px;
+        width: 40%;
+        padding: 10px;
+        border-radius: 10px;
+        display: inline-block;
+        border: 1px solid #648ca5;
+        background-color: #648ca5;
+        font-size: 16px;
+        word-wrap: break-word;
+        box-shadow:  inset -5px -5px 10px #17335a;
+        
+    }
+nav{
+    text-align: center;
+    background-color:#f0faef;
+    padding: 30px;
+
+}
+    nav .title{
+        margin: 0px 0 10px 0;
+
+    }
+    nav .nav-content{
+        display: flex;
+        
+
+    }
+    nav .nav-content .content{
+        width: 33.33%;
+
+    }
+        nav .nav-content .content .img-nav-content{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+
+        }
+        nav .nav-content .content .img-title{
+            margin-bottom: 10px;
+            
+        }
+        nav .nav-content .content .img-content{
+            padding: 20px;
+        }
+.card{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    background-color: #a8dadb;
+    width: 500px;
+    text-align: center;
+    padding: 10px;
+    border: 3px solid #86d1d2;
+    border-radius: 5px;
+    box-shadow: 5px 10px;
+    margin-left: 40%;   
+    }
+.card::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.img-card{
+    float: left;
+    width: 200px;
+    height: 300px;
+    object-fit: contain;
+    border: 3px solid white;
+    border-radius: 10px;
+ }
+.card-content{
+    white-space: wrap;
+    
+ }
+.card-content-title{
+    margin-top: 15px;
+    word-spacing: 7px;
+    padding-bottom: 10px;
+ }
+.card-content-content{
+    text-indent: 10px;        
+            }
+.card-content-author{
+    padding-top: 10px;
+    text-indent: 60px;            
+}

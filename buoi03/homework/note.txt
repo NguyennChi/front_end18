@@ -1,0 +1,29 @@
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    text-shadow: 1px 1px #ff0000;
+    box-shadow:  inset -5px -5px 10px #17335a;
+
+.card::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.img-card{
+    float: left;
+    width: 200px;
+    height: 300px;
+    object-fit: contain;
+ }
+.card-content{
+    white-space: wrap;
+ }
+.card-content-title{
+    word-spacing: 7px;
+ }
+.card-content-content{
+    text-indent: 10px;        
+            }
+.card-content-author{
+    text-indent: 60px;            
+}
