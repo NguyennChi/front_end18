@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.content{
+    max-width: 900px;
+    text-align: center;
+    margin: 10px auto;
+    width: 95%;
+}
+h3{
+    color: blue;
+    padding-bottom: 15px;
+}
+.title-layout{
+    margin: 30px;
+}
+span{
+    color: red;
+}
+.img-layout{
+    width: 100%;
+    display: block;
+}
+.column-layout{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.col-1{
+    width: 20%;
+}
+.col-2{
+    width: 45%;
+}
+.col-3{
+    width: 70%;
+}
+.color-back{
+    border: 1px solid blue;
+    background-color: blue;
+    color: white;
+    padding: 20px 10px;
+}

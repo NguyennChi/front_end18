@@ -1,0 +1,4 @@
+wh: theo chiều ngang của giao diện
+vh: theo chiều cao của giao diện
+rem: theo fonsize mặc định
+em: phụ thuộc vào fonsize của nó hay chứa nó
