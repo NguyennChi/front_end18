@@ -164,6 +164,75 @@ body {
   height: 50px;
   border-radius: 7px;
 }
+.beauty {
+  padding: 8rem 0;
+}
+.beauty .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.beauty .section-title {
+  margin-bottom: 2.4rem;
+}
+.section-title {
+  font-family: var(--font-family-secondary);
+  color: var(--color-light-black);
+}
+.beauty .article {
+  width: 48.5%;
+  display: flex;
+}
+
+.article {
+  width: 31.5%;
+  border-radius: var(--border-radius-full);
+  overflow: hidden;
+  background-color: var(--color-white);
+  box-shadow: var(--box-shadow-sm);
+  margin-bottom: 2.4rem;
+  transition: 0.3s;
+}
+.beauty .article .thumb {
+  width: 35%;
+}
+.article .info {
+  padding: 2.1rem;
+}
+.article .title {
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
+  display: block;
+  color: var(--color-light-black);
+}
+.beauty .article .info {
+  flex: 1;
+}
+.beauty .article .thumb {
+  width: 35%;
+}
+.article .meta {
+  display: flex;
+  align-items: center;
+  margin-top: 1.6rem;
+}
+.article .author-avatar {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  margin-right: 0.5em;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+.article .author-name {
+  color: var(--color-black);
+  font-weight: 500;
+}
+.article .date {
+  font-size: 1.4rem;
+}
 .trending {
   padding: 8rem 0;
   background-color: var(--color-light-grey);

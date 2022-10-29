@@ -16,447 +16,320 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
-<body>
-    <header class="header">
-        <div class="container">
-            <a href="index.html" class="logo">
-                <h1><i class="fa-regular fa-newspaper"></i> NewsBlog</h1>
-            </a>
+<body cz-shortcut-listen="true">
+    <header>
+        <div class="container container-flex">
+            <h1 class="logo"><a href="https://frontend-my-blog.netlify.app/index.html"><i
+                        class="fa-regular fa-newspaper"></i> NewsBlog</a></h1>
             <nav>
                 <ul class="menu">
-                    <li class="menu-item active"><a class="menu-link" href="#">Home</a></li>
-                    <li class="menu-item "><a class="menu-link" href="#">More <i class="fa-solid fa-angle-down"></i></a>
+                    <li class="menu-item active"><a class="menu-link"
+                            href="https://frontend-my-blog.netlify.app/#">Home</a></li>
+                    <li class="menu-item"><a class="menu-link" href="https://frontend-my-blog.netlify.app/#">More <i
+                                class="fa-solid fa-angle-down"></i></a></li>
+                    <li class="menu-item"><a class="menu-link" href="https://frontend-my-blog.netlify.app/#">Contact</a>
                     </li>
-                    <li class="menu-item"><a class="menu-link" href="#">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <section class="category-box">
+    <section class="container container-flex home-category">
+        <div class="home-category-item">
+            <i class="fa-solid fa-bath"></i>
+            <h4>Beauty</h4>
+        </div>
+        <div class="home-category-item">
+            <i class="fa-solid fa-female"></i>
+            <h4>Fashion and style</h4>
+        </div>
+        <div class="home-category-item">
+            <i class="fa-solid fa-cutlery"></i>
+            <h4>Food and wellness</h4>
+        </div>
+        <div class="home-category-item">
+            <i class="fa-solid fa-pie-chart"></i>
+            <h4>Lifestyle</h4>
+        </div>
+    </section>
+    <section class="container container-flex featured-article">
+        <div class="featured-article-info">
+            <span class="category-tag">Food and Wellness</span>
+            <h2 class="featured-article-title">Create healthy habits, not restrictions. Wellness is a taste of
+                being.
+            </h2>
+            <p class="featured-article-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                sit id accusantium officia quod quasi necessitatibus perspiciatis Harum error
+                provident quibusdam tenetur. Ut fermentum leo quis sapienet faucibus, at
+                scelerisque sem feugiat. Nulla in eros purus.</p>
+        </div>
+        <img class="featured-article-thumb" src="./My Blog_files/food.jpg" alt="">
+    </section>
+    <section class="editor-pick">
         <div class="container container-flex">
-            <div class="category-box-item">
-                <i class="fa-solid fa-bath category-box-icon"></i>
-                <h4>Beauty</h4>
+            <div class="editor-pick-articles">
+                <h2 class="section-title">Editor's Pick</h2>
+                <div class="container-flex">
+                    <article class="editor-pick-article">
+                        <a href="https://frontend-my-blog.netlify.app/#" class="editor-pick-article-thumb">
+                            <img src="./My Blog_files/image1.jpg" alt="">
+                        </a>
+                        <div class="editor-pick-article-info">
+                            <span class="category-tag">Beauty</span>
+                            <a href="https://frontend-my-blog.netlify.app/#" class="editor-pick-article-title">
+                                <h3>The 3 Eyeshadow palettes I own &amp; How to
+                                    downsize your stash</h3>
+                            </a>
+                            <p class="editor-pick-article-desciption">Lorem ipsum dolor sit amet consectetur ipsum
+                                adipisicing elit.
+                                Quis vitae sit.</p>
+                            <div class="editor-pick-article-meta">
+                                <img src="./My Blog_files/a1.jpg" class="editor-pick-article-author-avatar" alt="">
+                                <ul>
+                                    <li class="editor-pick-article-author-name">Isabella ava</li>
+                                    <li class="editor-pick-article-date">July 13, 2020</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="editor-pick-article">
+                        <a href="https://frontend-my-blog.netlify.app/#" class="editor-pick-article-thumb">
+                            <img src="./My Blog_files/image2.jpg" alt="">
+                        </a>
+                        <div class="editor-pick-article-info">
+                            <span class="category-tag">Fashion</span>
+                            <a href="https://frontend-my-blog.netlify.app/#" class="editor-pick-article-title">
+                                <h3>2 New outfit formulas to add to your
+                                    Capsule Wardrobe
+                                </h3>
+                            </a>
+                            <p class="editor-pick-article-desciption">Lorem ipsum dolor sit amet consectetur ipsum
+                                adipisicing elit.
+                                Quis vitae sit.</p>
+                            <div class="editor-pick-article-meta">
+                                <img src="./My Blog_files/a2.jpg" class="editor-pick-article-author-avatar" alt="">
+                                <ul>
+                                    <li class="editor-pick-article-author-name">Charlotte mia</li>
+                                    <li class="editor-pick-article-date">July 13, 2020</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="ads container-flex">
+                    <h3>Advertise with us</h3>
+                    <a href="https://frontend-my-blog.netlify.app/#" class="btn-ads">Learn More</a>
+                </div>
             </div>
-            <div class="category-box-item">
-                <i class="fa-solid fa-female category-box-icon"></i>
-                <h4>Fashion and Style</h4>
-            </div>
-            <div class="category-box-item">
-                <i class="fa-solid fa-cutlery category-box-icon"></i>
-                <h4>Food and wellness</h4>
-            </div>
-            <div class="category-box-item">
-                <i class="fa-solid fa-pie-chart category-box-icon"></i>
-                <h4>Beauty</h4>
+            <aside class="editor-pick-aside">
+                <h2 class="section-title">Topics</h2>
+                <div class="topic">
+                    <a href="https://frontend-my-blog.netlify.app/#" class="topic-item">
+                        <div class="topic-icon"><i class="fa-solid fa-bath"></i></div>
+                        <h4>Beauty</h4>
+                    </a>
+                    <a href="https://frontend-my-blog.netlify.app/#" class="topic-item">
+                        <div class="topic-icon"><i class="fa-solid fa-female"></i></div>
+                        <h4>Fashion and style</h4>
+                    </a>
+                    <a href="https://frontend-my-blog.netlify.app/#" class="topic-item">
+                        <div class="topic-icon"><i class="fa-solid fa-cutlery"></i></div>
+                        <h4>Food and wellness</h4>
+                    </a>
+                    <a href="https://frontend-my-blog.netlify.app/#" class="topic-item">
+                        <div class="topic-icon"><i class="fa-solid fa-pie-chart"></i></div>
+                        <h4>Lifestyle</h4>
+                    </a>
+                </div>
+                <h2 class="section-title">Our sponsors</h2>
+                <a href="https://frontend-my-blog.netlify.app/" class="sponsors-ads">
+                    <img src="./My Blog_files/ad.jpg" alt="">
+                </a>
+            </aside>
+        </div>
+    </section>
+    <section class="top-pick">
+        <div class="container">
+            <h2 class="section-title">Top Pick's of this month</h2>
+            <div class="top-pick-article">
+                <article class="top-pick-article-item">
+                    <img src="./My Blog_files/pic1.jpg" alt="" class="top-pick-article-thumb">
+                    <div class="top-pick-article-info">
+                        <a href="https://frontend-my-blog.netlify.app/#" class="top-pick-article-title">
+                            <h3>Fashion is Creating your Beauty image. The New fashion starts here</h3>
+                        </a>
+                        <div class="top-pick-article-meta">
+                            <img src="./My Blog_files/a1.jpg" class="top-pick-article-author-avatar" alt="">
+                            <ul>
+                                <li class="top-pick-article-author-name">Isabella ava</li>
+                                <li class="top-pick-article-date">July 13, 2020</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                <article class="top-pick-article-item">
+                    <img src="./My Blog_files/pic2.jpg" alt="" class="top-pick-article-thumb">
+                    <div class="top-pick-article-info">
+                        <a href="https://frontend-my-blog.netlify.app/#" class="top-pick-article-title">
+                            <h3>The 5 Nonnegotiables of a Healthy Quarantine food that a Doctor Approved</h3>
+                        </a>
+                        <div class="top-pick-article-meta">
+                            <img src="./My Blog_files/a2.jpg" class="top-pick-article-author-avatar" alt="">
+                            <ul>
+                                <li class="top-pick-article-author-name">Charlotte mia</li>
+                                <li class="top-pick-article-date">July 13, 2020</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                <article class="top-pick-article-item">
+                    <img src="./My Blog_files/pic3.jpg" alt="" class="top-pick-article-thumb">
+                    <div class="top-pick-article-info">
+                        <a href="https://frontend-my-blog.netlify.app/#" class="top-pick-article-title">
+                            <h3> Right food baked with natural ingredient, the use of best quality products</h3>
+                        </a>
+                        <div class="top-pick-article-meta">
+                            <img src="./My Blog_files/a3.jpg" class="top-pick-article-author-avatar" alt="">
+                            <ul>
+                                <li class="top-pick-article-author-name">Elizabeth</li>
+                                <li class="top-pick-article-date">July 13, 2020</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
-    <section class="featured-article">
-        <div class="container container-flex">
-            <div class="featured-article-info">
-                <span class="category-tag">Beauty</span>
-                <h2 class="featured-article-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro,
-                    minima!</h2>
-                <p class="featured-article-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam
-                    laboriosam quasi incidunt quas, possimus sapiente pariatur mollitia enim, explicabo fugiat quidem
-                    culpa
-                    ratione maxime nemo dolores, ad excepturi veritatis ipsam?</p>
-            </div>
-            <img class="featured-article-thumb" src="./images/food.jpg" alt="">
-        </div>
-        </div>
-        <div class="editor-pick">
-            <div class="container container-flex">
-                <div class="editor-pick-articles">
-                    <h2 class="section-title"></h2>
-                    <div class="container-flex">
-                        <article class="editor-pick-article">
-                            <img src="" class="editor-pick-article-thumb" alt="">
-                            <div class="editor-pick-article-info">
-                                <span class="category-tag"></span>
-                                <h3 class="editor-pick-article-title"></h3>
-                                <p class="editor-pick-article-description"></p>
-                                <div class="editor-pick-article-meta">
-                                    <img src="" class="editor-pick-article-author-avatar" alt="">
-                                    <ul>
-                                        <li class="editor-pick-article-author-name"></li>
-                                        <li class="editor-pick-article-date"></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="editor-pick-article">
-                            <img src="" class="editor-pick-article-thumb" alt="">
-                            <div class="editor-pick-article-info">
-                                <span class="category-tag"></span>
-                                <h3 class="editor-pick-article-title"></h3>
-                                <p class="editor-pick-article-description"></p>
-                                <div class="editor-pick-article-meta">
-                                    <img src="" class="editor-pick-article-author-avatar" alt="">
-                                    <ul>
-                                        <li class="editor-pick-article-author-name"></li>
-                                        <li class="editor-pick-article-date"></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="ads">
-                        <h3></h3>
-                        <a href="" class="btn-ads-learn-more"></a>
-                    </div>
-                </div>
-                <aside class="editor-pick-aside">
-                    <h2 class="section-title"></h2>
-                    <div class="topics">
-                        <div class="topic-item">
-                            <div class="topic-icon"><i class="fa fa"></i></div>
-                            <h4 class="topic-text"></h4>
-                        </div>
-                        <div class="topic-item">
-                            <div class="topic-icon"><i class="fa fa"></i></div>
-                            <h4 class="topic-text"></h4>
-                        </div>
-                        <div class="topic-item">
-                            <div class="topic-icon"><i class="fa fa"></i></div>
-                            <h4 class="topic-text"></h4>
-                        </div>
-                        <div class="topic-item">
-                            <div class="topic-icon"><i class="fa fa"></i></div>
-                            <h4 class="topic-text"></h4>
+    <section class="fashion-style">
+        <div class="container">
+            <h2 class="section-title">Fashion and style</h2>
+            <div class="fashion-style-article container-flex">
+                <article class="article">
+                    <a href="https://frontend-my-blog.netlify.app/#" class="thumb">
+                        <img src="./My Blog_files/fashion1.jpg" alt="">
+                    </a>
+                    <div class="info">
+                        <a href="https://frontend-my-blog.netlify.app/#" class="title">
+                            <h3>An easy Guide to buying Denim &amp; My favourite styles</h3>
+                        </a>
+                        <div class="meta">
+                            <img src="./My Blog_files/a1.jpg" class="author-avatar" alt="">
+                            <ul>
+                                <li class="author-name">Isabella ava</li>
+                                <li class="date">July 13, 2020</li>
+                            </ul>
                         </div>
                     </div>
-                    <h2 class="section-title"></h2>
-                    <div class="sponsors">
-                        <img class="sponsors-banner" src="" alt="">
-                    </div>
-                </aside>
-            </div>
-        </div>
-    </section>
-    <section class="featured-article">
-        <div class="container container-flex">
-            <div class="featured-article-info">
-                <span class="category-tag">Beauty</span>
-                <h2 class="featured-article-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro,
-                    minima!</h2>
-                <p class="featured-article-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam
-                    laboriosam quasi incidunt quas, possimus sapiente pariatur mollitia enim, explicabo fugiat quidem
-                    culpa
-                    ratione maxime nemo dolores, ad excepturi veritatis ipsam?</p>
-            </div>
-            <img class="featured-article-thumb" src="./images/food.jpg" alt="">
-        </div>
-        </div>
-        <div class="editor-pick">
-            <div class="container container-flex">
-                <div class="editor-pick-articles">
-                    <h2 class="section-title"></h2>
-                    <div class="container-flex">
-                        <article class="editor-pick-article">
-                            <img src="" class="editor-pick-article-thumb" alt="">
-                            <div class="editor-pick-article-info">
-                                <span class="category-tag"></span>
-                                <h3 class="editor-pick-article-title"></h3>
-                                <p class="editor-pick-article-description"></p>
-                                <div class="editor-pick-article-meta">
-                                    <img src="" class="editor-pick-article-author-avatar" alt="">
-                                    <ul>
-                                        <li class="editor-pick-article-author-name"></li>
-                                        <li class="editor-pick-article-date"></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="editor-pick-article">
-                            <img src="" class="editor-pick-article-thumb" alt="">
-                            <div class="editor-pick-article-info">
-                                <span class="category-tag"></span>
-                                <h3 class="editor-pick-article-title"></h3>
-                                <p class="editor-pick-article-description"></p>
-                                <div class="editor-pick-article-meta">
-                                    <img src="" class="editor-pick-article-author-avatar" alt="">
-                                    <ul>
-                                        <li class="editor-pick-article-author-name"></li>
-                                        <li class="editor-pick-article-date"></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="ads">
-                        <h3></h3>
-                        <a href="" class="btn-ads-learn-more"></a>
-                    </div>
-                </div>
-                <aside class="editor-pick-aside">
-                    <h2 class="section-title"></h2>
-                    <div class="topics">
-                        <div class="topic-item">
-                            <div class="topic-icon"><i class="fa fa"></i></div>
-                            <h4 class="topic-text"></h4>
-                        </div>
-                        <div class="topic-item">
-                            <div class="topic-icon"><i class="fa fa"></i></div>
-                            <h4 class="topic-text"></h4>
-                        </div>
-                        <div class="topic-item">
-                            <div class="topic-icon"><i class="fa fa"></i></div>
-                            <h4 class="topic-text"></h4>
-                        </div>
-                        <div class="topic-item">
-                            <div class="topic-icon"><i class="fa fa"></i></div>
-                            <h4 class="topic-text"></h4>
+                </article>
+                <article class="article">
+                    <a href="https://frontend-my-blog.netlify.app/#" class="thumb">
+                        <img src="./My Blog_files/fashion2.jpg" alt="">
+                    </a>
+                    <div class="info">
+                        <a href="https://frontend-my-blog.netlify.app/#" class="title">
+                            <h3>The Satin Skirt &amp; How to Wear it all year round fashion</h3>
+                        </a>
+                        <div class="meta">
+                            <img src="./My Blog_files/a1.jpg" class="author-avatar" alt="">
+                            <ul>
+                                <li class="author-name">Isabella ava</li>
+                                <li class="date">July 13, 2020</li>
+                            </ul>
                         </div>
                     </div>
-                    <h2 class="section-title"></h2>
-                    <div class="sponsors">
-                        <img class="sponsors-banner" src="" alt="">
-                    </div>
-                </aside>
-            </div>
-        </div>
-    </section>
-    <section class="featured-article">
-        <div class="container container-flex">
-            <div class="featured-article-info">
-                <span class="category-tag">Beauty</span>
-                <h2 class="featured-article-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro,
-                    minima!</h2>
-                <p class="featured-article-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam
-                    laboriosam quasi incidunt quas, possimus sapiente pariatur mollitia enim, explicabo fugiat quidem
-                    culpa
-                    ratione maxime nemo dolores, ad excepturi veritatis ipsam?</p>
-            </div>
-            <img class="featured-article-thumb" src="./images/food.jpg" alt="">
-        </div>
-        </div>
-        <div class="editor-pick">
-            <div class="container container-flex">
-                <div class="editor-pick-articles">
-                    <h2 class="section-title"></h2>
-                    <div class="container-flex">
-                        <article class="editor-pick-article">
-                            <img src="" class="editor-pick-article-thumb" alt="">
-                            <div class="editor-pick-article-info">
-                                <span class="category-tag"></span>
-                                <h3 class="editor-pick-article-title"></h3>
-                                <p class="editor-pick-article-description"></p>
-                                <div class="editor-pick-article-meta">
-                                    <img src="" class="editor-pick-article-author-avatar" alt="">
-                                    <ul>
-                                        <li class="editor-pick-article-author-name"></li>
-                                        <li class="editor-pick-article-date"></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="editor-pick-article">
-                            <img src="" class="editor-pick-article-thumb" alt="">
-                            <div class="editor-pick-article-info">
-                                <span class="category-tag"></span>
-                                <h3 class="editor-pick-article-title"></h3>
-                                <p class="editor-pick-article-description"></p>
-                                <div class="editor-pick-article-meta">
-                                    <img src="" class="editor-pick-article-author-avatar" alt="">
-                                    <ul>
-                                        <li class="editor-pick-article-author-name"></li>
-                                        <li class="editor-pick-article-date"></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="ads">
-                        <h3></h3>
-                        <a href="" class="btn-ads-learn-more"></a>
-                    </div>
-                </div>
-                <aside class="editor-pick-aside">
-                    <h2 class="section-title"></h2>
-                    <div class="topics">
-                        <div class="topic-item">
-                            <div class="topic-icon"><i class="fa fa"></i></div>
-                            <h4 class="topic-text"></h4>
-                        </div>
-                        <div class="topic-item">
-                            <div class="topic-icon"><i class="fa fa"></i></div>
-                            <h4 class="topic-text"></h4>
-                        </div>
-                        <div class="topic-item">
-                            <div class="topic-icon"><i class="fa fa"></i></div>
-                            <h4 class="topic-text"></h4>
-                        </div>
-                        <div class="topic-item">
-                            <div class="topic-icon"><i class="fa fa"></i></div>
-                            <h4 class="topic-text"></h4>
+                </article>
+                <article class="article">
+                    <a href="https://frontend-my-blog.netlify.app/#" class="thumb">
+                        <img src="./My Blog_files/fashion3.jpg" alt="">
+                    </a>
+                    <div class="info">
+                        <a href="https://frontend-my-blog.netlify.app/#" class="title">
+                            <h3>What I’ll be Wearing this Party Season &amp; the Festive edit</h3>
+                        </a>
+                        <div class="meta">
+                            <img src="./My Blog_files/a3.jpg" class="author-avatar" alt="">
+                            <ul>
+                                <li class="author-name">Isabella ava</li>
+                                <li class="date">July 13, 2020</li>
+                            </ul>
                         </div>
                     </div>
-                    <h2 class="section-title"></h2>
-                    <div class="sponsors">
-                        <img class="sponsors-banner" src="" alt="">
-                    </div>
-                </aside>
-            </div>
-        </div>
-    </section>
-    <section class="featured-article">
-        <div class="container container-flex">
-            <div class="featured-article-info">
-                <span class="category-tag">Beauty</span>
-                <h2 class="featured-article-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro,
-                    minima!</h2>
-                <p class="featured-article-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam
-                    laboriosam quasi incidunt quas, possimus sapiente pariatur mollitia enim, explicabo fugiat quidem
-                    culpa
-                    ratione maxime nemo dolores, ad excepturi veritatis ipsam?</p>
-            </div>
-            <img class="featured-article-thumb" src="./images/food.jpg" alt="">
-        </div>
-        </div>
-        <div class="editor-pick">
-            <div class="container container-flex">
-                <div class="editor-pick-articles">
-                    <h2 class="section-title"></h2>
-                    <div class="container-flex">
-                        <article class="editor-pick-article">
-                            <img src="" class="editor-pick-article-thumb" alt="">
-                            <div class="editor-pick-article-info">
-                                <span class="category-tag"></span>
-                                <h3 class="editor-pick-article-title"></h3>
-                                <p class="editor-pick-article-description"></p>
-                                <div class="editor-pick-article-meta">
-                                    <img src="" class="editor-pick-article-author-avatar" alt="">
-                                    <ul>
-                                        <li class="editor-pick-article-author-name"></li>
-                                        <li class="editor-pick-article-date"></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="editor-pick-article">
-                            <img src="" class="editor-pick-article-thumb" alt="">
-                            <div class="editor-pick-article-info">
-                                <span class="category-tag"></span>
-                                <h3 class="editor-pick-article-title"></h3>
-                                <p class="editor-pick-article-description"></p>
-                                <div class="editor-pick-article-meta">
-                                    <img src="" class="editor-pick-article-author-avatar" alt="">
-                                    <ul>
-                                        <li class="editor-pick-article-author-name"></li>
-                                        <li class="editor-pick-article-date"></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="ads">
-                        <h3></h3>
-                        <a href="" class="btn-ads-learn-more"></a>
-                    </div>
-                </div>
-                <aside class="editor-pick-aside">
-                    <h2 class="section-title"></h2>
-                    <div class="topics">
-                        <div class="topic-item">
-                            <div class="topic-icon"><i class="fa fa"></i></div>
-                            <h4 class="topic-text"></h4>
-                        </div>
-                        <div class="topic-item">
-                            <div class="topic-icon"><i class="fa fa"></i></div>
-                            <h4 class="topic-text"></h4>
-                        </div>
-                        <div class="topic-item">
-                            <div class="topic-icon"><i class="fa fa"></i></div>
-                            <h4 class="topic-text"></h4>
-                        </div>
-                        <div class="topic-item">
-                            <div class="topic-icon"><i class="fa fa"></i></div>
-                            <h4 class="topic-text"></h4>
-                        </div>
-                    </div>
-                    <h2 class="section-title"></h2>
-                    <div class="sponsors">
-                        <img class="sponsors-banner" src="" alt="">
-                    </div>
-                </aside>
+                </article>
             </div>
         </div>
     </section>
     <section class="beauty">
         <div class="container">
-          <h2 class="section-title">Beauty</h2>
-          <div class="container-flex">
-            <article class="article">
-              <a href="#" class="thumb">
-                <img src="images/beauty1.jpg" alt="">
-              </a>
-              <div class="info">
-                <a href="#" class="title">
-                  <h3>Natural Spa - Where you feel unique and special</h3>
-                </a>
-                <div class="meta">
-                  <img src="images/a1.jpg" class="author-avatar" alt="">
-                  <ul>
-                    <li class="author-name">Isabella ava</li>
-                    <li class="date">July 13, 2020</li>
-                  </ul>
-                </div>
-              </div>
-            </article>
-            <article class="article">
-              <a href="#" class="thumb">
-                <img src="images/beauty2.jpg" alt="">
-              </a>
-              <div class="info">
-                <a href="#" class="title">
-                  <h3>How to get Beautiful coloring Highlights this weak</h3>
-                </a>
-                <div class="meta">
-                  <img src="images/a1.jpg" class="author-avatar" alt="">
-                  <ul>
-                    <li class="author-name">Isabella ava</li>
-                    <li class="date">July 13, 2020</li>
-                  </ul>
-                </div>
-              </div>
-            </article>
-            <article class="article">
-              <a href="#" class="thumb">
-                <img src="images/beauty3.jpg" alt="">
-              </a>
-              <div class="info">
-                <a href="#" class="title">
-                  <h3>New Hair Styles can look fabulous and shiny</h3>
-                </a>
-                <div class="meta">
-                  <img src="images/a3.jpg" class="author-avatar" alt="">
-                  <ul>
-                    <li class="author-name">Isabella ava</li>
-                    <li class="date">July 13, 2020</li>
-                  </ul>
-                </div>
-              </div>
-            </article>
-            <article class="article">
-              <a href="#" class="thumb">
-                <img src="images/beauty4.jpg" alt="">
-              </a>
-              <div class="info">
-                <a href="#" class="title">
-                  <h3>How our dreams should shine and spray beauty to us.</h3>
-                </a>
-                <div class="meta">
-                  <img src="images/a1.jpg" class="author-avatar" alt="">
-                  <ul>
-                    <li class="author-name">Isabella ava</li>
-                    <li class="date">July 13, 2020</li>
-                  </ul>
-                </div>
-              </div>
-            </article>
-          </div>
+            <h2 class="section-title">Beauty</h2>
+            <div class="container-flex">
+                <article class="article">
+                    <a href="https://frontend-my-blog.netlify.app/#" class="thumb">
+                        <img src="./My Blog_files/beauty1.jpg" alt="">
+                    </a>
+                    <div class="info">
+                        <a href="https://frontend-my-blog.netlify.app/#" class="title">
+                            <h3>Natural Spa - Where you feel unique and special</h3>
+                        </a>
+                        <div class="meta">
+                            <img src="./My Blog_files/a1.jpg" class="author-avatar" alt="">
+                            <ul>
+                                <li class="author-name">Isabella ava</li>
+                                <li class="date">July 13, 2020</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                <article class="article">
+                    <a href="https://frontend-my-blog.netlify.app/#" class="thumb">
+                        <img src="./My Blog_files/beauty2.jpg" alt="">
+                    </a>
+                    <div class="info">
+                        <a href="https://frontend-my-blog.netlify.app/#" class="title">
+                            <h3>How to get Beautiful coloring Highlights this weak</h3>
+                        </a>
+                        <div class="meta">
+                            <img src="./My Blog_files/a1.jpg" class="author-avatar" alt="">
+                            <ul>
+                                <li class="author-name">Isabella ava</li>
+                                <li class="date">July 13, 2020</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                <article class="article">
+                    <a href="https://frontend-my-blog.netlify.app/#" class="thumb">
+                        <img src="./My Blog_files/beauty3.jpg" alt="">
+                    </a>
+                    <div class="info">
+                        <a href="https://frontend-my-blog.netlify.app/#" class="title">
+                            <h3>New Hair Styles can look fabulous and shiny</h3>
+                        </a>
+                        <div class="meta">
+                            <img src="./My Blog_files/a3.jpg" class="author-avatar" alt="">
+                            <ul>
+                                <li class="author-name">Isabella ava</li>
+                                <li class="date">July 13, 2020</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                <article class="article">
+                    <a href="https://frontend-my-blog.netlify.app/#" class="thumb">
+                        <img src="./My Blog_files/beauty4.jpg" alt="">
+                    </a>
+                    <div class="info">
+                        <a href="https://frontend-my-blog.netlify.app/#" class="title">
+                            <h3>How our dreams should shine and spray beauty to us.</h3>
+                        </a>
+                        <div class="meta">
+                            <img src="./My Blog_files/a1.jpg" class="author-avatar" alt="">
+                            <ul>
+                                <li class="author-name">Isabella ava</li>
+                                <li class="date">July 13, 2020</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </div>
         </div>
     </section>
     <section class="trending">
@@ -464,57 +337,62 @@
             <h2 class="section-title">Trending Now</h2>
             <div class="container-flex">
                 <article class="article">
-                    <a href="" class="thumb">
-                        <img src="./images/trending1.jpg" alt="">
+                    <a href="https://frontend-my-blog.netlify.app/#" class="thumb">
+                        <img src="./My Blog_files/trending1.jpg" alt="">
                     </a>
                     <div class="info">
                         <span class="category-tag">Sport</span>
-                        <a href="#" class="title">
+                        <a href="https://frontend-my-blog.netlify.app/#" class="title">
                             <h3>Playing footbal with your feet is one thing.</h3>
                         </a>
-                        <p class="description">Lorem ipsum dolor sit amet consectetur ipsum adipisicing elit. Quis vitae sit.</p>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur ipsum adipisicing elit. Quis vitae
+                            sit.</p>
                         <div class="meta">
-                            <img src="images/a1.jpg" class="author-avatar" alt="">
+                            <img src="./My Blog_files/a1.jpg" class="author-avatar" alt="">
                             <ul>
-                              <li class="author-name">Isabella ava</li>
-                              <li class="date">July 13, 2020</li>
+                                <li class="author-name">Isabella ava</li>
+                                <li class="date">July 13, 2020</li>
                             </ul>
-                          </div>
+                        </div>
                     </div>
                 </article>
                 <article class="article">
-                    <a href="" class="thumb">
-                        <img src="./images/trending1.jpg" alt="">
+                    <a href="https://frontend-my-blog.netlify.app/#" class="thumb">
+                        <img src="./My Blog_files/trending2.jpg" alt="">
                     </a>
                     <div class="info">
-                        <span class="category-tag">Sport</span>
-                        <a href="#" class="title">
-                            <h3>Playing footbal with your feet is one thing.</h3>
+                        <span class="category-tag">Fitness</span>
+                        <a href="https://frontend-my-blog.netlify.app/#" class="title">
+                            <h3>Experience the state of the art fitness! Fitness on Track</h3>
                         </a>
-                        <p class="description">Lorem ipsum dolor sit amet consectetur ipsum adipisicing elit. Quis vitae sit.</p>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur ipsum adipisicing elit. Quis vitae
+                            sit.</p>
                         <div class="meta">
-                            <img src="images/a1.jpg" class="author-avatar" alt="">
+                            <img src="./My Blog_files/a1.jpg" class="author-avatar" alt="">
                             <ul>
-                              <li class="author-name">Isabella ava</li>
-                              <li class="date">July 13, 2020</li>
+                                <li class="author-name">Isabella ava</li>
+                                <li class="date">July 13, 2020</li>
                             </ul>
-                          </div>
+                        </div>
                     </div>
                 </article>
             </div>
         </div>
     </section>
     <section class="newsletter">
-        <div class="container container-mail">
-            <h1 class="title">Subscribe to our newsletter!</h1><br>
-            <h3>We'll send you the best of our blog just once a month. We promise.</h3><br>
-            <form  class="form-mail">
-                <input class="get-mail" type="text" placeholder=" E-mail"/>
-                <input type="button" class=" submit" type="submit" value="Send">
-            </form>
+        <div class="container">
+            <div class="content">
+                <h2 class="section-title">Subscribe to our newsletter!</h2>
+                <p>We'll send you the best of our blog just once a month. We promise.</p>
+                <form action="https://frontend-my-blog.netlify.app/#">
+                    <input type="text" placeholder="Email Address">
+                    <input type="button">Subscribe</button>
+                </form>
+            </div>
         </div>
     </section>
-    <footer class="footer content footer-ct">ZendVN 2022</footer>
+    <footer>ZendVN 2022</footer>
+
 </body>
 
 </html>
