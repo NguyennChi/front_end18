@@ -9,23 +9,34 @@ let chkLetters = document.getElementById('checkbox-letters');
 let chkSymbols = document.getElementById('checkbox-symbols');
 // create pass 
 btnGenerate.addEventListener('click', () => {
-    // let item = LETTERS[Math.floor(Math.random() * LETTERS.length)];
-
     let ischeckNumber = chkNumber.checked;
     let ischeckLetter = chkLetters.checked;
     let ischeckSymbols = chkSymbols.checked;
+
+
     if (ischeckNumber) {
-        let item = NUMBERS[Math.floor(Math.random() * NUMBERS.length)];
-        result.innerText = item;
+        getCreatePass(NUMBERS);
+        getMultiCreatePass(NUMBERS,3)
     }
     if (ischeckLetter) {
-        let item = LETTERS[Math.floor(Math.random() * LETTERS.length)];
-        result.innerText = item;
+        getMultiCreatePass(LETTERS)
     }
     if (ischeckSymbols) {
-        let item = SYMBOLS[Math.floor(Math.random() * SYMBOLS.length)];
-        result.innerText = item;
+        getMultiCreatePass(SYMBOLS)  
     }
     
 })
+
+//  lấy 1 phần tử
+getCreatePass = (arr) => {
+    const item = arr[Math.floor(Math.random(1, 5) * arr.length)];
+    result.innerText = item;
+    return;
+}
+// lấy nhiều phần tử
+getMultiCreatePass =(arr, num)=>{
+    const items = [...arr].slice(0, num).sort(() => 0.5 - Math.random());
+    result.innerText = items;
+    return;
+  }
 
