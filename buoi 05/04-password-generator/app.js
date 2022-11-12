@@ -7,6 +7,7 @@ let result = document.getElementById('result')
 let chkNumber = document.getElementById('checkbox-numbers');
 let chkLetters = document.getElementById('checkbox-letters');
 let chkSymbols = document.getElementById('checkbox-symbols');
+
 // create pass 
 btnGenerate.addEventListener('click', () => {
     let ischeckNumber = chkNumber.checked;
@@ -16,13 +17,13 @@ btnGenerate.addEventListener('click', () => {
 
     if (ischeckNumber) {
         getCreatePass(NUMBERS);
-        getMultiCreatePass(NUMBERS,3)
+        getMultiCreatePass(NUMBERS,6)
     }
     if (ischeckLetter) {
-        getMultiCreatePass(LETTERS)
+        getMultiCreatePass(LETTERS,6)
     }
     if (ischeckSymbols) {
-        getMultiCreatePass(SYMBOLS)  
+        getMultiCreatePass(SYMBOLS,6)  
     }
     
 })
@@ -40,3 +41,10 @@ getMultiCreatePass =(arr, num)=>{
     return;
   }
 
+createPass=(charaters,length)=>{
+    let result ='';
+    for (let i = 0; i < length; i++) {
+        const item = arr[Math.floor(Math.random(1, 5) * arr.length)];
+    }
+
+}

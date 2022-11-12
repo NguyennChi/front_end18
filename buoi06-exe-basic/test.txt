@@ -1,0 +1,82 @@
+prompt: hiển thị thong báo có input
+alert: Chỉ hiển thị thông báo
+câu 2:
+1 2 3 4
+câu 3:
+0 1 2 3 4
+câu 4:
+0 1 2 3 4
+câu 5:
+1 2 3 4
+câu 6
+for(i=2, i<=10; i+2) console.log(i)
+=== 07 ===
+let i=0
+while(i<3)
+console.log( `number ${i}!` )
+ i++;
+}
+
+/*
+=== 01 ===
+Viết lại đoạn code bên dưới sử dụng 'if..else'
+switch (browser) {
+  case 'Edge':
+    alert( "Bạn đang sử dụng trình duyệt Edge!" );
+    break;
+  case 'Chrome':
+  case 'Firefox':
+  case 'Safari':
+  case 'Opera':
+    alert( 'Website hoạt động tốt trên trình duyệt bạn đang sử dụng!' );
+    break;
+  default:
+    alert( 'Website có thể hoạt động không ổn định trên trình duyệt bạn đang sử dụng!' );
+}
+
+
+=== 02 ===
+Viết lại đoạn code bên dưới sử dụng switch..case
+
+let a = prompt('Nhập một số', '');
+a = parseInt(a);
+
+if (a == 0) {
+  alert( 0 );
+}
+
+if (a == 1) {
+  alert( 1 );
+}
+
+if (a == 2 || a == 3) {
+  alert( '2,3' );
+}
+let a = prompt('Nhập một số', '');
+a = parseInt(a);
+switch (a) {
+case 0:
+     alert( 0 );
+     break;
+case 1:
+     alert( 1 );
+     break;
+case 2:
+case 3:
+    alert( '2,3' );
+    break;
+}
+
+*/
+let browser = 'ưddsad';
+let test = (browser === "Chrome" || browser === "Firefox" || browser === "Safari" || browser === "Opera");
+console.log('test', test);
+if (browser === "Edge") {
+  console.log("Bạn đang sử dụng trình duyệt Edge!");
+} else if (test) {
+  console.log("Website hoạt động tốt trên trình duyệt bạn đang sử dụng!");
+} else {
+  console.log(
+    "Website có thể hoạt động không ổn định trên trình duyệt bạn đang sử dụng!"
+  );
+}

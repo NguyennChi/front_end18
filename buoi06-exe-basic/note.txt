@@ -1,0 +1,2 @@
+prompt: hiển thị thong báo có input
+alert: Chỉ hiển thị thông báo
