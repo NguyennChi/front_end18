@@ -2,3 +2,20 @@ addEventListener(
     + 'click'
     + 'change'
     + 'input'
+
+https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes
+
+data-id --> el.dataset.id
+data-id-abc --> el.dataset.idAbc
+
+event delegation
+https://developer.mozilla.org/en-US/docs/Web/API/Element/classList
+
+delegation
+
+localStorage
+setItem
+getItem
+removeItem
+Array, Object -> set -> JSON.stringify
+              -> get -> JSON.parse
