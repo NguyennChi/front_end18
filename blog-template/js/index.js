@@ -133,7 +133,7 @@ fetch(`${URL_BASE}categories_news`)
                 <span class="label-blue">${categories_name}</span>
                     <a href="#blog-single.html" class="blog-desc text">${item.title}
                     </a>
-                    <p class="">${shotDecript}... <span class="fx-14"><a href="#"> xem </span></p>
+                    <p class="">${shotDecript}... <span class="fx-14"><a href=">${item.link}">xem</span></p>
                     <div class="author align-items-center">
                         <img src="assets/images/a1.jpg" alt="" class="img-fluid rounded-circle" />
                         <ul class="blog-meta">

@@ -11095,8 +11095,8 @@ form.signin-form {
   /* clip|ellipsis|string|initial|inherit; */
   text-overflow: ellipsis;  
   display: -webkit-box;
-  line-height: 10px;     /* fallback */
-  max-height: 55px;      /* fallback */
+  line-height: 5px;     /* fallback */
+  max-height: 50px;      /* fallback */
   -webkit-line-clamp: 2; /* number of lines to show */
   -webkit-box-orient: vertical;
 }
