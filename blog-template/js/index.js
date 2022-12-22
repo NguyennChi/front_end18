@@ -1,9 +1,7 @@
-const URL_BASE = 'https://apiforlearning.zendvn.com/api/v2/'
+
 
 // lib
 
-// format day
-dayjs.extend(window.dayjs_plugin_relativeTime);
 
 // func conunt str
 function countWords(str) {
@@ -16,38 +14,7 @@ function countWords(str) {
 let removeStr = (str,limit)=>{
     return str.split(' ').slice(0, limit).join(' ')
 }
-// // Menu
-fetch(`${URL_BASE}categories_news`)
-  .then((response) => response.json())
-  .then((data) => {
-    const categories = data.data
-    // console.log(categories)
-    // duyệt categories
-    let contentHTML = '';
-    let xhtml = ''
-    categories.forEach((category, index) => {
-        if (index < 2) {
-            contentHTML += `<li class="nav-item">
-            <a class="nav-link" href="${category.link}">${category.name}</a>
-        </li>`
-        } else {
-            xhtml +=  `<a class="dropdown-item" href="${category.link}">${category.name}</a> `
-        }
-       
-    });
-    if (xhtml!== '') {
-        xhtml = `<li class="nav-item dropdown ">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Danh mục khác <span class="fa fa-angle-down"></span>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown" >
-                        ${xhtml}
-                    </div>
-            </li>`
-    }
-    document.getElementById('main-menu').innerHTML= contentHTML + xhtml
-  });
+
 // caterory
   fetch(`${URL_BASE}categories_news/featured?limit=4`)
   .then((response) => response.json())
@@ -121,7 +88,7 @@ fetch(`${URL_BASE}categories_news`)
         const pubDate = dayjs(item.publish_date).fromNow();
         const fullDate = dayjs(item.publish_date).format('DD/MM/YYYY') 
             contentHTML += `<div class="col-lg-4 col-md-6 item">
-            <div class="card">
+            <div class="card h-100">
                 <div class="card-header p-0 position-relative">
                     <a href="#blog-single.html">
                         <img class="card-img-bottom d-block radius-image-full" src="${item.thumb}"
@@ -155,44 +122,66 @@ fetch(`${URL_BASE}categories_news`)
     document.getElementById('seen-article').innerHTML= contentHTML
   });
 // Bài viết tổng hợp
-fetch(`${URL_BASE}articles?limit=4`)
-.then((response) => response.json())
-.then((data) => {
-  const items = data.data
-  let contentHTML = '';
-  items.forEach((item,index) => { 
-      const pubDate = dayjs(item.publish_date).fromNow();
-      const fullDate = dayjs(item.publish_date).format('DD/MM/YYYY') 
-          contentHTML += `<div class="col-lg-6 mt-4">
-          <div class="bg-clr-white hover-box">
-              <div class="row">
-                  <div class="col-sm-5 position-relative">
-                      <a href="#blog-single.html" class="image-mobile">
-                          <img class="card-img-bottom d-block radius-image-full" src="${item.thumb}" style="height:100%; object-fit: cover;"
-                              alt="Card image cap">
-                      </a>
-                  </div>
-                  <div class="col-sm-7 card-body blog-details align-self">
-                      <a href="#blog-single.html" class="blog-desc">${item.title}
-                      </a>
-                      <div class="author align-items-center">
-                          <img src="assets/images/a3.jpg" alt="" class="img-fluid rounded-circle" />
-                          <ul class="blog-meta">
-                              <li>
-                                  <a href="author.html">${item.author}</a> </a>
-                              </li>
-                              <li class="meta-item blog-lesson">
-                                  <span class="meta-value"> ${fullDate} </span>. <span
-                                      class="meta-value ml-2"><span class="fa fa-clock-o"></span> ${pubDate} </span>
-                              </li>
-                          </ul>
+
+const renderArticle=(page = 1)=>{
+    fetch(`${URL_BASE}articles?limit=&page=${page}`)
+    .then((response) => response.json())
+    .then((data) => {
+        const lastPage = data.meta.last_page
+      const items = data.data
+      let contentHTML = '';
+      items.forEach((item,index) => { 
+          const pubDate = dayjs(item.publish_date).fromNow();
+          const fullDate = dayjs(item.publish_date).format('DD/MM/YYYY') 
+              contentHTML += `<div class="col-lg-6 mt-4">
+              <div class="bg-clr-white hover-box">
+                  <div class="row">
+                      <div class="col-sm-5 position-relative">
+                          <a href="#blog-single.html" class="image-mobile">
+                              <img class="card-img-bottom d-block radius-image-full" src="${item.thumb}" style="height:100%; object-fit: cover;"
+                                  alt="Card image cap">
+                          </a>
+                      </div>
+                      <div class="col-sm-7 card-body blog-details align-self">
+                          <a href="#blog-single.html" class="blog-desc">${item.title}
+                          </a>
+                          <div class="author align-items-center">
+                              <img src="assets/images/a3.jpg" alt="" class="img-fluid rounded-circle" />
+                              <ul class="blog-meta">
+                                  <li>
+                                      <a href="author.html">${item.author}</a> </a>
+                                  </li>
+                                  <li class="meta-item blog-lesson">
+                                      <span class="meta-value"> ${fullDate} </span>. <span
+                                          class="meta-value ml-2"><span class="fa fa-clock-o"></span> ${pubDate} </span>
+                                  </li>
+                              </ul>
+                          </div>
                       </div>
                   </div>
               </div>
           </div>
-      </div>
-         ` 
-  });
- 
-  document.getElementById('total-new').innerHTML= contentHTML
-});
+             ` 
+      });
+      document.getElementById('total-new').innerHTML += contentHTML
+      if (page === lastPage) {
+        btnLoadMore.style.display = 'none'
+    } else {
+        btnLoadMore.innerText('xem thêm')
+    btnLoadMore.disabled = true
+    }
+   
+    });
+}
+let currentPage = 1
+renderArticle(currentPage)
+
+const btnLoadMore = document.getElementById('load-more')
+btnLoadMore.addEventListener('click',()=>{
+    currentPage++
+    btnLoadMore.innerText = 'Đang tải...'
+    btnLoadMore.disabled = true
+    renderArticle(currentPage)
+    
+    
+})
